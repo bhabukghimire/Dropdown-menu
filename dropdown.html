@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hoverable dropdown navbar</title>
+</head>
+<body>
+<style type="text/css">
+body{
+	background-color: yellow;
+	font-family: cursive;
+}
+.navbar{
+	color: black;
+	font-family: cursive;
+	font-size: 40px;
+
+
+}
+.navbar a{
+	text-decoration: none;
+	padding-right: 5px;
+	padding-left: 5px;
+	background-color: lime;
+	border-radius: 300px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	text-align: center;
+
+}
+.navbar a:hover{
+	background-color:white;
+}
+.content a{
+	text-decoration: none;
+	font-family: cursive;
+	font-size: 40px;
+
+}
+.content a:hover{
+	background-color: pink;
+border-radius: 300px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	text-align: center;
+
+}
+#content1{
+		
+		text-align: center;
+		text-decoration: none;
+		font-size: 40px;
+		width: 4px;
+		position: center;
+		padding-left: 570px;
+		stroke: unset;
+	}
+
+	
+</style>
+<div class="navbar">
+<a href="">Home</a>
+<a href="">Help</a>
+<a href="">Contact</a>
+<a href="">About</a>
+<a href=""  onmouseover="show()" onmouseout="hide()">More</a>
+</div>
+
+<div class="content" id="content1" style="display: none;" >
+	<a href=""  onmouseover="show()" onmouseout="hide()">M1</a><br>
+	<a href=""  onmouseover="show()" onmouseout="hide()">M2</a><br>
+	<a href=""  onmouseover="show()" onmouseout="hide()">M3</a><br>
+</div>
+
+
+
+<script type="text/javascript">
+function show(){
+	var c=document.getElementById('content1').style.display="block";
+}
+function hide(){
+	var c=document.getElementById('content1').style.display="none";
+}
+	 
+
+</script>
+
+</body>
+</html>
